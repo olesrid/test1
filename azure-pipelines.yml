@@ -6,4 +6,5 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- checkout: none
 - script: echo "Trigger all dependent pipelines!"
