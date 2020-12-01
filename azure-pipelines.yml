@@ -3,7 +3,9 @@ trigger:
     include:
     - releases/*
     - main
-
+  paths:
+    exclude:
+    - Portal_Routes
 
 pool:
   vmImage: 'ubuntu-latest'
