@@ -1,9 +1,11 @@
 trigger:
   branches:
     include:
-    - main
     - releases/*
+    - main
   paths:
+    include:
+      - '*'
     exclude:
     - Portal_Routes
     - azure-pipelines.yml

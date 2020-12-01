@@ -3,3 +3,4 @@ newline
 newline2
 ChangeInBothPipelines
 New
+New2

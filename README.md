@@ -4,3 +4,4 @@ new
 change in both pipelines
 Test
 Test2
+Test3

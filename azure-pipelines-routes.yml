@@ -6,6 +6,8 @@ trigger:
   paths:
     include:
     - Portal_Routes/*
+    exclude:
+    - '*'
 
 pool:
   vmImage: 'ubuntu-latest'
