@@ -4,14 +4,12 @@ trigger:
     - main
     - releases/*
   paths:
-    exclude:
-    - Portal_Routes
-    - azure-pipelines.yml
-    - web-app-routes.yml
+    include:
+    - Portal_Routes/*
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
 - checkout: none
-- script: echo "Trigger Main Repo!"
+- script: echo "Trigger Routes!"
