@@ -3,13 +3,20 @@ trigger:
     include:
     - releases/*
     - main
-  paths:
-    exclude:
-    - Portal_Routes
+
+pr:
+  branches:
+    include:
+      - main
+  drafts: false
 
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+- name: isPR
+  value: $[eq(variables['Build.Reason'], 'PullRequest')]
+
 steps:
 - checkout: none
-- script: echo "Trigger Main Repo!"
+- script: echo "$(isPR)"
